@@ -53,15 +53,15 @@ export function useGoogleOAuth() {
   const logout = async () => {
     isLoggingOut.value = true
     try {
-      // 1) Revocar token
+      // 1) Revoke the token with Google
       if (window.google && auth.accessToken) {
         await new Promise((r) => window.google.accounts.oauth2.revoke(auth.accessToken, r))
       }
 
-      // 2) Limpiar stores
+      // 2) Clear local session state
       auth.clearToken()
 
-      // 3) Redirigir
+      // 3) Back to the home page
       router.push('/')
     } catch (e) {
       console.error(e)

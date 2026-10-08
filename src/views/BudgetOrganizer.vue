@@ -16,12 +16,18 @@ const logoProfile = computed(() => {
 <template>
   <MainLayout>
     <div class="p-4">
-      <h1 class="text-2xl font-bold">Montly Budget</h1>
+      <h1 class="text-2xl font-bold">Monthly Budget</h1>
 
       <div v-if="authStore.userProfile" class="mt-4">
         <p>Welcome, {{ authStore.userProfile.name }}</p>
 
-        <img v-if="logoProfile" :src="logoProfile" class="w-12 h-12 rounded-full" />
+        <img
+          v-if="logoProfile"
+          :src="logoProfile"
+          :alt="`${authStore.userProfile.name} profile picture`"
+          class="w-12 h-12 rounded-full"
+          referrerpolicy="no-referrer"
+        />
       </div>
       <button
         @click="logout"

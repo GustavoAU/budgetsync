@@ -10,13 +10,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "lint:check": "eslint .",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/"
   },
   "dependencies": {
-    "@react-oauth/google": "^0.12.2",
     "@tailwindcss/vite": "^4.1.11",
-    "jwt-decode": "^4.0.0",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.18",
@@ -32,6 +34,7 @@
     "prettier": "3.6.2",
     "tailwindcss": "^4.1.11",
     "vite": "^7.0.6",
-    "vite-plugin-vue-devtools": "^8.0.0"
+    "vite-plugin-vue-devtools": "^8.0.0",
+    "vitest": "^3.2.7"
   }
 }

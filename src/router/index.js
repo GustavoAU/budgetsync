@@ -27,7 +27,6 @@ const router = createRouter({
   routes,
 })
 
-
 router.beforeEach(authGuard)
 
 export default router

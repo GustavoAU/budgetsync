@@ -28,3 +28,8 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Local environment (never commit real values)
+.env
+.env.*
+!.env.example
