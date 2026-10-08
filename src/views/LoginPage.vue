@@ -15,12 +15,12 @@ onMounted(() => {
 <template>
   <MainLayout>
     <div class="fixed left-1/2 top-1/2 transform -translate-1/2">
-      <h1 class="mb-2 text-lg font-semibold text-gray-800">Login:</h1>
+      <h1 class="mb-2 text-lg font-semibold text-gray-800">Sign in</h1>
       <button
         @click="login"
         class="bg-google-blue hover:bg-google-blue-dark text-white rounded-xl px-4 py-2 cursor-pointer transition-colors duration-200"
       >
-        Login con Google
+        Sign in with Google
       </button>
       <div
         v-if="auth.isLoggingIn"
@@ -30,7 +30,7 @@ onMounted(() => {
           <div
             class="animate-spin h-6 w-6 mx-auto mb-2 border-4 border-blue-500 border-t-transparent rounded-full"
           ></div>
-          <p class="text-gray-700 font-medium">Redirigiendo, por favor espera...</p>
+          <p class="text-gray-700 font-medium">Redirecting, please wait...</p>
         </div>
       </div>
     </div>

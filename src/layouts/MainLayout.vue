@@ -1,4 +1,3 @@
-<!-- src/layouts/DefaultLayout.vue -->
 <script setup>
 import MainHeader from '@/components/MainHeader.vue'
 </script>

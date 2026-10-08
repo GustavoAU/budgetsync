@@ -19,7 +19,7 @@ export async function authGuard(to, from, next) {
 
     return next()
   } catch (err) {
-    console.error('❌ authGuard falló:', err)
+    console.error('authGuard failed:', err)
 
     auth.clearToken()
     auth.setRedirectPath(to.fullPath)
